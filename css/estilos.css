@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.typeMont{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+}
+
+.typeMont.medium{
+	font-weight: 500;
+}
+
+.typeMont.bold{
+	font-weight: 700;
+}
+
+.bgColorBlack{
+	background-color:#000000;
+}
+.colorBlack{
+	color: #000000;
+}
+
+.bgColorBlue{
+	background-color:#2886da;
+}
+.colorBlue{
+	color: #2886da;
+}
+
+.bgColorGreen{
+	background-color:#19d96e;
+}
+.colorGreen{
+	color: #19d96e;
+}
+
+.bgColorWhite{
+	background-color:#ffffff;
+}
+.colorWhite{
+	color: #ffffff;
+}
+
+#header{
+	min-height: 130px;
+	display:  flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#header .logo{
+	margin-left: 30px;
+}
+
+#header ul{
+
+	list-style-type: none;
+}
+#header li{
+	display: inline-block;
+	padding:  0 15px;
+
+}
+#header li a{
+ 	color: #ffffff;
+ 	font-size: 15px;
+ 	text-decoration: none;
+}
+
+.button{
+	display:  inline-block;
+	text-decoration: none;
+	font-size:  18px;
+	padding: 0.7em 2em;
+	border-radius: 10px;
+
+}
+
+.button.mar-right{
+	margin-right:  30px;
+}
+
+/*-----------Banner----------*/
+#content{
+	max-width: 100vp;
+	margin:  auto;
+}
+
+.banner{
+	min-height:  850px;	
+	display: flex;
+	flex-direction:  row;
+	align-items: center;
+	flex-direction: column;
+    justify-content: center;
+    background-image: url(../media/cancha.jpg);
+    repeat:  no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner h3, .banner p{
+	color: #ffffff;
+}
+
+.banner h3{
+	max-width: 625px;
+	font-size:  45px;
+	margin-bottom:  0.4em;	
+}
+.banner p{
+	font-size:  18px;
+	max-width: 500px;
+	margin-bottom:  1.5em;	
+}
+.banner div{
+	text-align: center;
+}
+
+#footer{
+	position: border;
+	bottom: 0;
+	min-height: 350px;
+	text-align: center;
+}
+
+#footer .logo{
+	padding-top: 50px;
+}
+
+
+/*-----------grids----------*/
+#grilla{
+	display: grid;
+	grid-template-areas: 
+	"team news"
+	"fut foro";
+
+	grid-template-columns: 2fr 2fr;
+	grid-column-gap: 20px;
+	justify-items: stretch;
+	align-items: start;
+	align-content: start;
+	width: 100vp;
+	height: 100vp;
+	margin: auto;
+	padding-top: 50px;
+	grid-row-gap: 50px;
+
+}
+
+.team{
+	grid-area: team;
+	background-color: none;
+	
+}
+
+.team .bannerTeam{
+	width: 100%;
+	min-height: 450px;
+	display: grid;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-image: url("../media/male.jpg");
+	background-size: cover;
+	background-position: center;
+	border-radius: 0px 20px 20px 0px;
+
+}
+
+.news{
+	grid-area: news;
+	background-color: none;
+	justify-items: stretch;
+	align-items: stretch;
+}
+
+.news .bannerNews{
+	width: 80%;
+	min-height: 450px;
+	display: grid;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	padding-left: 10%;
+}
+
+.bannerNews h3, .bannerNews p{
+	color: black;
+}
+
+.bannerNews h3{
+	max-width: 350px;
+	font-size:  35px;
+	margin-bottom:  0.4em;
+	line-height : 1.3em;	
+}
+.bannerNews p{
+	font-size:  20px;
+	max-width: 500px;
+	margin-bottom:  1.5em;
+	line-height : 1.3em;
+}
+.bannerNews div{
+	text-align: left;
+}
+
+
+.futbol{
+	grid-area: fut;
+	background-color: none;
+	grid-column-start: 2;
+	
+}
+
+.futbol .bannerFutbol{
+	width: 100%;
+	min-height: 500px;
+	display: grid;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-image: url("../media/female.jpg");
+	background-size: cover;
+	background-position: center;
+	border-radius: 20px 0px 0px 20px;
+}
+
+.foro{
+	min-height: 500px;
+	display: grid;
+	flex-direction: column;
+	justify-content: start;
+	justify-items:  start;
+	align-items: center;
+	grid-column-start: 1;
+	padding-left: 10%;
+	padding: auto;
+}
+
+.foro.bannerForo{
+	width: 80%;
+	min-height: 500px;
+	display: grid;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	
+}
+
+.bannerForo h3, .bannerForo p{
+	color: black;
+}
+
+.bannerForo h3{
+	max-width: 500px;
+	font-size:  35px;
+	margin-bottom:  0.4em;
+	line-height : 1.3em;
+}
+.bannerForo p{
+	font-size:  20px;
+	max-width: 500px;
+	margin-bottom:  1.5em;
+	line-height : 1.3em;
+}
+.bannerForo div{
+	text-align: left;
+}
+
+
+#usuarios {
+  	display: flex;
+	flex-direction: row;
+  	min-height: 500px;
+	justify-content: center;
+	align-content:stretch;
+	align-items: center;
+	background-color: black;
+	margin-top: 50px;
+
+}
+
+
+
+.topUsers{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-end;
+	gap: 1rem;
+}
+
+.topUsers .personaUno{
+	display: flex;     
+   	flex-direction: column; 
+   	justify-content: flex-end;
+   	align-items:  center;
+	min-width: 250px;
+	min-height: 400px;
+	text-align: center;
+	background-color: #19d96e;
+	border-radius: 10px;
+	background-image: url("../media/playerB.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.personaUno div{
+	margin-bottom: 1rem;
+
+}
+.topUsers .personaDos{
+	display: flex;     
+   	flex-direction: column; 
+   	justify-content: flex-end;
+   	align-items:  center;
+	min-width: 250px;
+	min-height: 400px;
+	text-align: center;
+	background-color: #19d96e;
+	border-radius: 10px;
+	background-image: url("../media/playerA.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.personaDos div{
+	margin-bottom: 1rem;
+
+}
+.topUsers .personaTres{
+	display: flex;     
+   	flex-direction: column; 
+   	justify-content: flex-end;
+   	align-items:  center;
+	min-width: 250px;
+	min-height: 400px;
+	text-align: center;
+	background-color: #19d96e;
+	border-radius: 10px;
+	background-image: url("../media/playerB.jpg");
+	background-size: cover;
+	background-position: center;
+}
+.personaTres div{
+	margin-bottom: 1rem;
+
+}
+.topUsers .personaCuatro{
+	display: flex;     
+   	flex-direction: column; 
+   	justify-content: flex-end;
+   	align-items:  center;
+	min-width: 250px;
+	min-height: 400px;
+	text-align: center;
+	background-color: #19d96e;
+	border-radius: 10px;
+	background-image: url("../media/playerA.jpg");
+	background-size: cover;
+	background-position: center;
+}
+.personaCuatro div{
+	margin-bottom: 1rem;
+
+}
+.topUsers .personaCinco{
+	display: flex;     
+   	flex-direction: column; 
+   	justify-content: flex-end;
+   	align-items:  center;
+	min-width: 250px;
+	min-height: 400px;
+	text-align: center;
+	background-color: #19d96e;
+	border-radius: 10px;
+	background-image: url("../media/playerB.jpg");
+	background-size: cover;
+	background-position: center;
+}
+.personaCinco div{
+	margin-bottom: 1rem;
+
+}
+
+#footer{
+	position: border;
+	bottom: 0;
+	min-height: 350px;
+	text-align: center;
+	margin-top: 50px ;
+}
+
+#footer .logo{
+	padding-top: 50px;
+}
